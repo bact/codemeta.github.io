@@ -1,6 +1,5 @@
 ---
-title: Codemeta Workshop
-
+title: CodeMeta Workshop
 ---
 
 

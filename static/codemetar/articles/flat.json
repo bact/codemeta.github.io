@@ -51,7 +51,7 @@
     "http://schema.org/description": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "Codemeta is a metadata content standard for software.  It includes schemas in JSON-LD and XML Schema for providing semantics and validation."
+        "@value": "CodeMeta is a metadata content standard for software.  It includes schemas in JSON-LD and XML Schema for providing semantics and validation."
       }
     ],
     "http://schema.org/downloadUrl": [

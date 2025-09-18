@@ -1,6 +1,5 @@
 ---
-title: Codemeta Terms
-
+title: CodeMeta Terms
 ---
 
 ## Terms from Schema.org
@@ -13,11 +12,10 @@ These terms are all recognized properties of <https://schema.org/SoftwareSourceC
 
 {{< properties-description matchParentType="schema:(Person|Thing|Review|Role)">}}
 
-## Codemeta terms
+## CodeMeta terms
 
 The CodeMeta project also introduces the following additional properties, which lack clear equivalents in <https://schema.org> but can play an important role in software metadata records covered by the CodeMeta crosswalk.
 
 {{< properties-description matchParentType="codemeta:">}}
-
 
 Please suggest additional terms or adjustments to this representation in the [codemeta issues](https://github.com/codemeta/codemeta/issues)
