@@ -12,12 +12,13 @@ You can use the [codemeta-generator](https://codemeta.github.io/codemeta-generat
 A CodeMeta instance file describes the metadata associated with a software object using JSON's linked data (JSON-LD) notation.  A codemeta file can contain any of the properties described on the [CodeMeta terms page](/terms/). Most codemeta files are called `codemeta.json` by convention.
 
 Here is an example of a basic `codemeta.json` that you can put at the root of a Github repo ([link to full example](https://github.com/ropensci/codemetar/blob/master/codemeta.json)):
+
 ```json
 {
     "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
-    "description": "Codemeta defines a 'JSON-LD' format for describing software metadata. This package provides utilities to generate, parse, and modify codemeta.jsonld files automatically for R packages.",
+    "description": "CodeMeta defines a 'JSON-LD' format for describing software metadata. This package provides utilities to generate, parse, and modify codemeta.jsonld files automatically for R packages.",
     "license": "https://spdx.org/licenses/GPL-3.0",
     "identifier": "http://dx.doi.org/10.5281/zenodo.XXXX"
 }
@@ -203,7 +204,7 @@ because in the latter, `"https://cran.r-project.org"` is the `"url"` of `rmarkdo
 
 ## The context
 
-Every CodeMeta document must refer to the context file *codemeta.jsonld*, for example via a URL.  This indicates that all terms in the document should be interpreted in the "context" of CodeMeta.  Most terms are chosen to match the equivalent terms in <http://schema.org>, but CodeMeta provides a few additional terms not found in <http://schema.org> which may be helpful for software projects.  CodeMeta also restricts the context to use only those <https://schema.org> terms that are explicitly listed on ther [terms](/terms/) page.  Users wanting to include additional terms must extend the context (see [developer-guide](/developer-guide/)).  
+Every CodeMeta document must refer to the context file *codemeta.jsonld*, for example via a URL.  This indicates that all terms in the document should be interpreted in the "context" of CodeMeta.  Most terms are chosen to match the equivalent terms in <http://schema.org>, but CodeMeta provides a few additional terms not found in <http://schema.org> which may be helpful for software projects.  CodeMeta also restricts the context to use only those <https://schema.org> terms that are explicitly listed on their [terms](/terms/) page.  Users wanting to include additional terms must extend the context (see [developer-guide](/developer-guide/)).  
 
 
 The context file may be modified and updated in the future, if new JSON properties are added or existing ones modified.
