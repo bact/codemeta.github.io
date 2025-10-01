@@ -1,5 +1,5 @@
 ---
-title: "Crosswalk for SPDX 2.3 fields"
+title: "Crosswalk for SPDX 2.3 SBOM"
 image: "/img/spdx.png"
 date: "2024-01-15"
 ---
