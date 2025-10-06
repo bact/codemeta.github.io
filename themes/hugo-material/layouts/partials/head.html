@@ -24,12 +24,12 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/wesbos/Font-Awesome-Docker-Icon/master/fontcustom/fontcustom.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css">
 
-
-
   {{ range .Site.Params.custom_css }}
   <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
   {{ end }}
-  {{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}
-  <link rel="canonical" href="{{ .Permalink }}">
 
+  {{ with .OutputFormats.Get "RSS" }}
+  <link rel="alternate" type="application/rss+xml" title="{{ printf '%s RSS feed' $.Site.Title }}" href="{{ .RelPermalink }}" />
+  {{ end }}
+  <link rel="canonical" href="{{ .Permalink }}">
 </head>
