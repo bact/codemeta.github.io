@@ -2,24 +2,21 @@
 title: CodeMeta Workshop
 ---
 
+April 15 - 17 2016  
+Portland, Oregon  
+The Future of Software Metadata
 
-# April 15 - 17 2016
+## Agenda
 
-# Portland, Oregon
-
-# The Future of Software Metadata
-
-## [Agenda](/agenda)
-
-<br/>
-
-<hr/>
-
+[Agenda](./agenda.md)
 
 ## The CodeMeta Project Workshop
 
-The CodeMeta project does not seek to create [yet another standard](https://xkcd.com/927/).  Rather, we're aiming to _create a crosswalk table_ between standards already in use -- think of this as a Rosetta stone of software metadata.  Beginning in an [Open Science Code-fest](http://nceas.github.io/open-science-codefest/) discussion lead by [Abby Mayes](https://twitter.com/abbycabs) and now thanks to a generous [NSF EAGER Grant](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1549758&HistoricalAwards=false) to Carl Boettiger (UC Berkeley) & Matt Jones (NCEAS & UC Santa Barbara), we will bring together leaders of software and data repositories with academic researchers to develop this crosswalk table for software metadata. This event will dovetail with the [Force16](https://www.force11.org/meetings/force2016) (Future of Research Communication & e-Scholarship) meeting in Portland. 
+The CodeMeta project does not seek to create [yet another standard](https://xkcd.com/927/). Rather, we're aiming to _create a crosswalk table_ between standards already in use -- think of this as a Rosetta Stone of software metadata.
 
+Beginning in an [Open Science Code-fest](http://nceas.github.io/open-science-codefest/) discussion lead by [Abby Mayes](https://twitter.com/abbycabs) and now thanks to a generous [NSF EAGER Grant](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1549758&HistoricalAwards=false) to Carl Boettiger (UC Berkeley) & Matt Jones (NCEAS & UC Santa Barbara), we will bring together leaders of software and data repositories with academic researchers to develop this crosswalk table for software metadata.
+
+This event will dovetail with the [Force16](https://www.force11.org/meetings/force2016) (Future of Research Communication & e-Scholarship) meeting in Portland.
 
 ### Our team
 
@@ -34,7 +31,7 @@ The CodeMeta project does not seek to create [yet another standard](https://xkcd
 - [Luke Coy](http://lukecoy.github.io/), RIT & MSL
 - [Kyle Niemeyer](http://kyleniemeyer.com/), Oregon State
 - [Alice Allen](https://twitter.com/asclnet), ASCL
-- [Mercè Crosas](http://scholar.harvard.edu/mercecrosas), Harvard IQSS 
+- [Mercè Crosas](http://scholar.harvard.edu/mercecrosas), Harvard IQSS
 - [Ashley Sands](https://knowledgeinfrastructures.gseis.ucla.edu/?page_id=62#Sands), UCLA
 - [Neil Chue Hong](https://twitter.com/npch) SSI
 - [Peter Slaughter](https://github.com/sbpcs59), NCEAS
@@ -42,21 +39,18 @@ The CodeMeta project does not seek to create [yet another standard](https://xkcd
 - [Dan Katz](http://danielskatz.org/), NCSA
 - [Carole Goble](http://www.manchester.ac.uk/research/Carole.goble/), University of Manchester
 
-
 ## Project Origins
 
 The CodeMeta project was first conceived at the [Open Science Codefest](http://nceas.github.io/open-science-codefest/), we met to discuss the metadata for scientific software. Participants included:
 
-- Abigail Cabunoc / @abbycabs
-- Matt Jones / @metamattj
-- Carly Strasser / @carlystrasser
-- Corinna Gries / @CorinnaGries
+- Abigail Cabunoc / [@abbycabs](https://twitter.com/abbycabs)
+- Matt Jones / [@metamattj](https://twitter.com/metamattj)
+- Carly Strasser / [@carlystrasser](https://twitter.com/carlystrasser)
+- Corinna Gries / [@CorinnaGries](https://twitter.com/CorinnaGries)
 
 Work was recorded on [this etherpad](https://etherpad.mozilla.org/oscodefest-softwaremetadata).
-
 
 <!--
 - [Lars Holm Nielsen](http://www.hankat.dk/), Zenodo
 - [Jennifer Lin](https://twitter.com/jenniferlin15), CrossRef
-
 -->
