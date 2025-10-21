@@ -7,7 +7,6 @@ disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", "\\.csv", "\\.R"]
 publishDir = "../website"
 
-
 [[menu.main]]
     name = "Home"
     url = "/index.html"
@@ -40,6 +39,20 @@ publishDir = "../website"
     name = "Tools"
     url = "/tools"
     weight = 8
+
+[[menu.footer]]
+    name = "Source code on Github"
+    url = "https://github.com/codemeta/"
+    pre = "<i class='bi-github'></i>"
+    weight = 1
+[[menu.footer]]
+    name = "Governance"
+    url = "https://codemeta.github.io/governance/"
+    weight = 2
+[[menu.footer]]
+    name = "Scicodes Consortium"
+    url = "https://scicodes.net/"
+    weight = 3
 
 
 [params]
