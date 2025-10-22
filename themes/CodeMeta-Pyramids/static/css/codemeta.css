@@ -242,6 +242,28 @@ code{
   border-radius: 0 0 0 1em;
 }
 
-#skip-to-content:focus{
-	transform: translateY(0%);
+@media only screen and (min-width: 992px) {
+
+	#skip-to-content:focus{
+		transform: translateY(0%);
+	}
+
 }
+
+@media only screen and (max-width: 991px) {
+
+	#skip-to-content{
+		transform: translateY(-177%);
+		padding-right: 0px;
+	}
+
+}
+@media only screen and (max-width: 991px) {
+
+	#skip-to-content:focus{
+		transform: translateY(-77%);
+		margin-right: -15px;
+	}
+
+}
+
