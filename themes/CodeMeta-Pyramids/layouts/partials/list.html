@@ -17,7 +17,7 @@
     <div class="col-11">
     {{ range .Paginator.Pages }}
     <div class="article">
-      <h2><a href="{{ .RelPermalink }}">{{if .Params.image }} <img src="{{ .Params.image }}" height="50px"/> {{ end }}{{ .Title }}</a></h2>
+      <h2><a href="{{ .RelPermalink }}">{{if .Params.image }} <img alt="{{ substr .Params.image 5 -4 }} logo" src="{{ .Params.image }}" height="50px"/> {{ end }}{{ .Title }}</a></h2>
     </div>
     {{ end }}
     </div>
