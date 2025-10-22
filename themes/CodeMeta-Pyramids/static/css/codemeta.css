@@ -215,6 +215,9 @@ h1,h2,h3,h4,h5,h6,h7 {
 
 .main a {
   color: var(--bs-primary);
+}
+
+.main a, #sectionsNav a:hover, #footer-nav a:hover {
   text-decoration: underline !important;
   text-underline-offset: 3px;
 }
