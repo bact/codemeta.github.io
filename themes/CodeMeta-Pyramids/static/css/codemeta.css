@@ -184,3 +184,18 @@ h1,h2,h3,h4,h5,h6,h7 {
 .toc-7 {
   padding-left: 4rem;
 }
+
+/*!
+ * News panel
+ */
+
+@media only screen and (min-width: 992px) {
+
+    #newslinks {
+      border-left: 2px solid var(--bs-dark-border-subtle);
+    }
+
+    [data-bs-theme=dark] #newslinks {
+      border-left: 2px solid var(--bs-border-color);
+    }
+}
