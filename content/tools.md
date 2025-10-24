@@ -1,5 +1,6 @@
 ---
 title: Tools
+layout: sidenav
 ---
 
 This page lists some existing tools to help with CodeMeta files.

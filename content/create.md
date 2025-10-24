@@ -7,5 +7,5 @@ Need to generate a CodeMeta compliant metadata file? Try out the [CodeMeta Gener
 
 {{< rawhtml >}}
   <a href="https://www.softwareheritage.org">
-  <img src="/img/swh-logo.png" style="height: 50px;"/> Software Heritage</a>
+  <img alt="Software Heritage logo" src="/img/swh-logo.png" style="height: 50px;"/> Software Heritage</a>
 {{< /rawhtml >}}

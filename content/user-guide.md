@@ -1,5 +1,6 @@
 ---
-title: User guide
+title: User Guide
+layout: sidenav
 ---
 
 ## Generating a CodeMeta file

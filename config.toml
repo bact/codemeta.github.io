@@ -1,4 +1,4 @@
-theme = "hugo-material"
+theme = "CodeMeta-Pyramids"
 baseurl = "/"
 relativeurls = true
 title = "The CodeMeta Project"
@@ -6,7 +6,6 @@ googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", "\\.csv", "\\.R"]
 publishDir = "../website"
-
 
 [[menu.main]]
     name = "Home"
@@ -41,23 +40,29 @@ publishDir = "../website"
     url = "/tools"
     weight = 8
 
+[[menu.footer]]
+    name = "Source code on Github"
+    url = "https://github.com/codemeta/"
+    pre = "<i class='bi-github'></i>"
+    weight = 1
+[[menu.footer]]
+    name = "Governance"
+    url = "https://codemeta.github.io/governance/"
+    weight = 2
+[[menu.footer]]
+    name = "Scicodes Consortium"
+    url = "https://scicodes.net/"
+    weight = 3
+
 
 [params]
     name =  "codemeta"
     github =  "codemeta"
-    custom_css = ["glyphicon.css"]
-    #custom_css = ["cboettig.css"]
     repo = "codemeta.github.io"
     background = "img/pyramids.jpg"
 
     date_format = "Mon, Jan 2, 2006"
     description = "A Rosetta Stone for Software Metadata"
-
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.10.0"
-    highlightCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml", "json"]
-    highlightjsTheme = "github"
 
     [params.logo]
     url = "logo.png"
@@ -69,3 +74,5 @@ publishDir = "../website"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    style = 'pygments'

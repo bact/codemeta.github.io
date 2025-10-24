@@ -1,0 +1,36 @@
+<nav class="navbar navbar-transparent fixed-top navbar-expand-lg" id="sectionsNav" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href=" {{ .Site.BaseURL | relURL }}">
+          {{.Site.Title }} </a>
+        <a class="p-1" id="skip-to-content" href="#jump-to-content" aria-label="Skip to content"><i role="presentation" class="bi bi-arrow-down-circle p-1"></i>Skip to content</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse show">
+        <ul class="navbar-nav ml-auto">
+          {{ range .Site.Menus.main }}
+          <li class="nav-item">
+            <a class="nav-link"
+               href="{{ .URL | relURL }}"
+               {{ if $.IsHome }}data-target="{{ .URL }}"{{ end }} 
+               title = "{{ .Name }}">{{ .Pre }} {{ .Name }}</a>
+          </li>
+          {{ end }}
+          <li>
+			<div class="form-check dark-light-toggler">
+				<input class="form-check-input" type="checkbox" id="darkModeSwitch" role="switch" aria-label="Switch between light and dark mode">
+				<label class="form-check-label" for="darkModeSwitch" role="placeholder" aria-label="Select to change mode" aria-hidden="true">
+					<i role="presentation" class='bi bi-sun-fill d-none' id='light-mode-bi' title="Light mode"></i>
+					<i role="presentation" class='bi bi-moon-stars-fill' id='dark-mode-bi' title="Dark mode"></i>
+				</label>
+			</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
