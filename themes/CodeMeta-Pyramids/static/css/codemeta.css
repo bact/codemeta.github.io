@@ -125,6 +125,44 @@ div.highlight {
 }
 
 /*!
+ * Carousel theming
+ */
+
+.slide, .carousel-item {
+  background-color: var(--bs-secondary-bg);
+}
+
+[data-bs-theme=dark] .slide, [data-bs-theme=dark] .carousel-item {
+  background-color: var(--bs-border-color) !important;
+  color: var(--bs-body-color);
+}
+
+.carousel .carousel-indicators .active {
+  transform: none;
+  box-shadow: none;
+  height: 7px;
+}
+
+.carousel .carousel-indicators [data-bs-target] {
+  margin: 5px;
+  background-color: var(--bs-body-color);
+}
+
+.carousel .carousel-indicator:hover {
+  height: 7px;
+}
+
+.carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  fill: var(--bs-body-color);
+}
+
+.carousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  fill: var(--bs-body-color);
+}
+
+/*!
  * ToC theming
  */
 
