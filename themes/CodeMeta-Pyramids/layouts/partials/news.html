@@ -1,12 +1,40 @@
 <div id="newslinks" class="container pt-2">
-    <h3 class="ms-3">News</h3>
-    <ul class="list-group list-unstyled">
-        <li><a class="list-group-item newslink lh-base p-2" href="https://www.softwareheritage.org/2025/06/18/codemetar-author-streamlines-software-metadata-updates/">CodemetaR Author streamlines software metadata updates</a></li>
-        <li><a class="list-group-item newslink lh-base p-2" href="https://www.softwareheritage.org/2025/05/07/software-heritage-citation-feature/">Software Heritage Citation Feature: Addressing researcher needs</a></li>
-        <li><a class="list-group-item newslink lh-base p-2" href="https://www.softwareheritage.org/2025/04/02/ospo-radar-project-launch/">The OSPO-RADAR Project: Making research software easier to find and use</a></li>
-        <li><a class="list-group-item newslink lh-base p-2" href="https://www.softwareheritage.org/2024/08/30/codemeta-new-features/">New Features in the CodeMeta Generator</a></li>
-        <li><a class="list-group-item newslink lh-base p-2" href="https://www.softwareheritage.org/2023/08/24/archival-of-software-metadata/">Deep Dive into the archival of Software Metadata</a></li>
-        <li><a class="list-group-item newslink lh-base p-2" href="https://www.softwareheritage.org/2020/03/18/codemeta-community/">Software Heritage contributes CodeMeta generator to the community</a></li>
-        <li><a class="list-group-item newslink lh-base p-2" href="https://www.softwareheritage.org/2019/05/28/mining-software-metadata-for-80-m-projects-and-even-more/">Mining software metadata for 80 M projects and even more</a></li>
-    </ul>
+  <h3 class="ms-3">News</h3>
+  <ul class="list-group list-unstyled">
+    {{ if .IsHome }}
+
+{{ $items := slice }}
+
+{{ range $feed := .Site.Data.feeds }}
+{{ $item := index $feed.channel "item" }}
+{{ $items = $items | append $item }}
+{{ end }}
+
+{{ $combi := slice }}
+
+{{- range $items -}}
+{{ $t := time.AsTime .pubDate }}
+{{ $m := dict "link" .link "title" .title "pubDate" $t "description" .description }}
+{{ $combi = $combi | append $m }}
+{{- end -}}
+
+{{ $combi := sort $combi ".pubDate" "desc" }}
+
+  {{ range first .Site.Params.newslimit $combi }}
+
+      <li class="ps-2">
+      <a class="list-group-item newslink lh-base p-2" href="{{ .link }}">{{ .title }}</a>
+      <small class="p-2 text-secondary-emphasis">{{ .pubDate | time.Format "Jan 02, 2006 3:04 PM MST" }}</small>
+    </li>
+      {{ end }}
+    {{ else }}
+      {{ range $combi }}
+    <li class="ps-2">
+      <a class="list-group-item newslink lh-base p-2" href="{{ .link }}">{{ .title }}</a>
+      <small class="p-2 text-secondary-emphasis">{{ .pubDate | time.Format "Jan 02, 2006 3:04 PM MST" }}</small>
+    </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+    {{ if .IsHome }}<div class="text-center"><small class="mw-100 text-secondary-emphasis">Updates daily<br><a href="/news">Full news feed</a></small></div>{{ end }}
 </div>

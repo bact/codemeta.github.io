@@ -60,6 +60,8 @@ publishDir = "../website"
     github =  "codemeta"
     repo = "codemeta.github.io"
     background = "img/pyramids.jpg"
+    
+    newslimit = 5
 
     date_format = "Mon, Jan 2, 2006"
     description = "A Rosetta Stone for Software Metadata"
