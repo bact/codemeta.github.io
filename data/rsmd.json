@@ -1,0 +1,8 @@
+[
+    {"aspect":"1.5", "description":"Keep the machine readable intrinsic metadata information in a single source file, and automatically generate other file formats", "class":"Useful", "link": "https://fair-impact.github.io/RSMD-guidelines/1.General/#rsmd-15"},
+    {"aspect":"4.1", "description":"Add software name and description of the software's functionality and purpose", "class":"Essential", "link": "https://fair-impact.github.io/RSMD-guidelines/4.Description_Classification/#rsmd-41"},
+    {"aspect":"4.2", "description":"Add descriptive metadata for classification purposes embedded in the code", "class":"Important", "link": "https://fair-impact.github.io/RSMD-guidelines/4.Description_Classification/#rsmd-42"},
+    {"aspect":"4.3", "description":"Cite related resources (e.g journal articles) describing the software with a persistent identifier or stable URL", "class":"Important", "link": "https://fair-impact.github.io/RSMD-guidelines/4.Description_Classification/#rsmd-43"},
+    {"aspect":"4.4", "description":"Add descriptive metadata of the software in a machine readable format", "class":"Important", "link": "https://fair-impact.github.io/RSMD-guidelines/4.Description_Classification/#rsmd-44"},
+    {"aspect":"5.1", "description":"Add intrinsic metadata about authors, this information can be captured in a human readable format", "class":"Essential", "link": "https://fair-impact.github.io/RSMD-guidelines/5.Credit_Attribution/#rsmd-51"}
+]

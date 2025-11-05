@@ -1,41 +1,17 @@
 
 <div id="rsmd-carousel" class="carousel slide rounded-2 text-center pb-4" data-bs-ride="carousel" data-bs-touch="true">
   <div class="carousel-inner">
-    <div class="carousel-item active rounded-2" data-bs-interval="20000">
+  {{ $counter := 0 }}
+    {{ range .Site.Data.rsmd }}
+    <div class="carousel-item rounded-2{{ if eq $counter 0 }} active{{ end }}" data-bs-interval="20000">
       <dl class="m-3 px-md-5">
-        <dt>RSMD 4.1</dt>
-        <dd class="px-5">Add software name and description of the software's functionality and purpose <a class="fw-bold" href="https://fair-impact.github.io/RSMD-guidelines/4.Description_Classification/#rsmd-41">[...]</a></dd>
-        <dd class="fst-italic fw-bold">Essential</dd>
+        <dt>{{ .aspect }}</dt>
+        <dd class="px-5">{{ .description }} <a class="fw-bold" href="{{ .link }}" aria-label="See the full {{ .aspect }} description on the RSMD site">[...]</a>
+        <dd class="fst-italic fw-bold">{{ .class }}</dd>
       </dl>
     </div>
-    <div class="carousel-item rounded-2" data-bs-interval="20000">
-      <dl class="m-3 px-md-5">
-        <dt>RSMD 4.2</dt>
-        <dd class="px-5">Add descriptive metadata for classification purposes embedded in the code <a class="fw-bold" href="https://fair-impact.github.io/RSMD-guidelines/4.Description_Classification/#rsmd-42">[...]</a></dd>
-        <dd class="fst-italic fw-bold">Important</dd>
-      </dl>
-    </div>
-    <div class="carousel-item rounded-2" data-bs-interval="20000">
-      <dl class="m-3 px-md-5">
-        <dt>RSMD 4.3</dt>
-        <dd class="px-5">Cite related resources (e.g journal articles) describing the software with a persistent identifier or stable URL <a class="fw-bold" href="https://fair-impact.github.io/RSMD-guidelines/4.Description_Classification/#rsmd-43">[...]</a></dd>
-        <dd class="fst-italic fw-bold">Important</dd>
-      </dl>
-    </div>
-    <div class="carousel-item rounded-2" data-bs-interval="20000">
-      <dl class="m-3 px-md-5">
-        <dt>RSMD 4.4</dt>
-        <dd class="px-5">Add descriptive metadata of the software in a machine readable format <a class="fw-bold" href="https://fair-impact.github.io/RSMD-guidelines/4.Description_Classification/#rsmd-44" >[...]</a></dd>
-        <dd class="fst-italic fw-bold">Important</dd>
-      </dl>
-    </div>
-    <div class="carousel-item rounded-2" data-bs-interval="20000">
-      <dl class="m-3 px-md-5">
-        <dt>RSMD 5.1</dt>
-        <dd class="px-5">Add intrinsic metadata about authors, this information can be captured in a human readable format <a class="fw-bold" href="https://fair-impact.github.io/RSMD-guidelines/5.Credit_Attribution/#rsmd-51">[...]</a></dd>
-        <dd class="fst-italic fw-bold">Essential</dd>
-      </dl>
-    </div>
+    {{ $counter = add $counter 1 }}
+  {{ end }}
   <button class="carousel-control-prev" type="button" data-bs-target="#rsmd-carousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -46,10 +22,10 @@
   </button>
   </div>
   <div class="carousel-indicators my-0">
-    <button type="button" data-bs-target="#rsmd-carousel" data-bs-slide-to="0" class="carousel-indicator active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#rsmd-carousel" data-bs-slide-to="1" class="carousel-indicator" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#rsmd-carousel" data-bs-slide-to="2" class="carousel-indicator" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#rsmd-carousel" data-bs-slide-to="3" class="carousel-indicator" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#rsmd-carousel" data-bs-slide-to="4" class="carousel-indicator" aria-label="Slide 5"></button>
+  {{ $counter := 0 }}
+    {{ range .Site.Data.rsmd }}
+    <button type="button" data-bs-target="#rsmd-carousel" data-bs-slide-to="{{ $counter }}" class="carousel-indicator{{ if eq $counter 0 }} active{{ end }}" aria-current="true" aria-label="Slide {{ $counter }}"></button>
+    {{ $counter = add $counter 1 }}
+  {{ end }}
   </div>
 </div>
