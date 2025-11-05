@@ -15,13 +15,13 @@ jobs:
     - uses: actions/checkout@v4
     - name: Download File
       run: |
-        curl https://www.softwareheritage.org/tag/codemeta/feed/ --output ./data/news.xml
+        curl https://www.softwareheritage.org/tag/codemeta/feed/ --output ./data/softwareheritage.xml
       working-directory: ${{ github.workspace }}
     - name: Commit and Push Changes
       run: |
         git config --global user.name "${{ github.actor }}"
         git config --global user.email "${{ github.actor }}@users.noreply.github.com"
 
-        git add ./data/news.xml
-        git commit -m 'Update news feed'
+        git add ./data/feeds/
+        git commit -m 'Update news'
         git push
