@@ -5,7 +5,7 @@
     {{ range .Site.Data.rsmd }}
     <div class="carousel-item rounded-2{{ if eq $counter 0 }} active{{ end }}" data-bs-interval="20000">
       <dl class="m-3 px-md-5">
-        <dt>{{ .aspect }}</dt>
+        <dt>RSMD {{ .aspect }}</dt>
         <dd class="px-5">{{ .description }} <a class="fw-bold" href="{{ .link }}" aria-label="See the full {{ .aspect }} description on the RSMD site">[...]</a>
         <dd class="fst-italic fw-bold">{{ .class }}</dd>
       </dl>
