@@ -21,6 +21,8 @@ such as Schema.org terms and JSON-LD, CodeMeta is now a recognised framework
 that is employed by a worldwide community of developers, researchers, and
 archivists.
 
+### Research Software MetaData Guidelines
+
 CodeMeta is suggested for use by the following 
 [Research Software MetaData Guidelines](https://fair-impact.github.io/RSMD-guidelines/)
 recommendations:
@@ -33,7 +35,7 @@ Credit
 : CodeMeta's _citation_ metadata is useful for ensuring that authors get
 credit for their software, when it is used for published research.
 
-Reproducability
+Reproducibility
 : Tracking the software libraries and applications used in research, using
 CodeMeta's _versions_ and _dependencies_ metadata, ensures that important
 findings can be reviewed and verified with greater accuracy.
