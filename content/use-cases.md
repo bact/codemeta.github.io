@@ -1,6 +1,10 @@
+---
+layout: single
+---
+
 ﻿Edited Use cases
 CodeMeta meeting in Portland
-Created 20160415 (use cases group pulled from here 230pm 20160516) https://docs.google.com/document/d/1SalOP_tLw7FC6jnoz5hJBB2jA7xBClKqc88wgmJu5Ro/edit
+Created 20160415 (use cases group pulled from here 230pm 20160516) [PDF export of google doc notes](/CodeMeta_Software_Use_Cases-Day2PM_WrkngGrp.pdf)
 
 
 
