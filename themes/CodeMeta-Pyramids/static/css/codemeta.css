@@ -228,16 +228,16 @@ h1,h2,h3,h4,h5,h6,h7 {
 }
 
 /*!
- * News panel
+ * right-side panel
  */
 
 @media only screen and (min-width: 992px) {
 
-    #newslinks {
+    .landing-right {
       border-left: 2px solid var(--bs-dark-border-subtle);
     }
 
-    [data-bs-theme=dark] #newslinks {
+    [data-bs-theme=dark] .landing-right {
       border-left: 2px solid var(--bs-border-color);
     }
 }
