@@ -312,6 +312,6 @@ code{
  * Errata
  */
 
-dl {
+dl, li {
   font-size: 14px;
 }
