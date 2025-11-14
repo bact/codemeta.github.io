@@ -8,6 +8,7 @@ Need to generate a CodeMeta compliant metadata file? The folks at
 make that easy.
 
 The form below is both a generator and a validator for `codemeta.json` files.
+It can be [accessed directly](https://github.com/codemeta/codemeta-generator).
 
 ## Create a new CodeMeta file
 
