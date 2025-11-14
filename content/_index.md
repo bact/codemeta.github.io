@@ -11,15 +11,15 @@ this can cause problems.
 
 _**CodeMeta acts as a vital bridge between these disciplines.**_
 
+[Aiming to solve this problem](/background), CodeMeta was founded in 2016
+by a consortium of researchers. Using existing standards such as Schema.org
+terms and JSON-LD, CodeMeta is now a recognised framework that is employed
+by a worldwide community of developers, researchers, and archivists.
+
 When used and maintained in code repositories and software distribution
 systems, CodeMeta enables the exact version of a library or application,
 that has been used and cited in scientific and other research, to be
 reliably identified and reused.
-
-Created in 2016 by a consortium of researchers, using existing technologies
-such as Schema.org terms and JSON-LD, CodeMeta is now a recognised framework
-that is employed by a worldwide community of developers, researchers, and
-archivists.
 
 ### Research Software MetaData Guidelines
 
