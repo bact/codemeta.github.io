@@ -111,6 +111,7 @@ div.highlight {
 
 .card {
   background-color: var(--bs-secondary-bg);
+  aspect-ratio: 1 / 1;
 }
 
 [data-bs-theme=dark] .card {
