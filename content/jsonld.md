@@ -6,7 +6,7 @@ layout: sidenav
 CodeMeta uses JSON-LD to represent and translate between software metadata formats.
 JSON-LD lead developer Manu Sporny explains how JSON-LD works in this short clip:
 
-{{< youtube Tm3fD89dqRE >}}
+{{% youtube Tm3fD89dqRE %}}
 
 ## The JSON-LD Context File
 
