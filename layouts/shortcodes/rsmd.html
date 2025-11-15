@@ -24,7 +24,9 @@
   <div class="carousel-indicators my-0">
   {{ $counter := 0 }}
     {{ range .Site.Data.rsmd }}
-    <button type="button" data-bs-target="#rsmd-carousel" data-bs-slide-to="{{ $counter }}" class="carousel-indicator{{ if eq $counter 0 }} active{{ end }}" aria-current="true" aria-label="Slide {{ $counter }}"></button>
+    <button id="carousel-slide-{{ $counter }}" type="button" data-bs-target="#rsmd-carousel" data-bs-slide-to="{{ $counter }}" class="carousel-indicator{{ if eq $counter 0 }} active{{ end }}" aria-current="true" aria-label="Slide {{ $counter }}">
+        <label class="form-check-label visually-hidden" for="carousel-slide-{{ $counter }}">Slide {{ $counter }}</label>
+    </button>
     {{ $counter = add $counter 1 }}
   {{ end }}
   </div>

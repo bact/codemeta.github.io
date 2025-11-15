@@ -51,7 +51,7 @@ window.addEventListener('resize', function() {
 });
 
 </script>
-<iframe id="generator" onload="iframeResize()" src="/codemeta-generator" class="d-inline-block w-100" frameborder="0">
+<iframe id="generator" title="CodeMeta Generator" onload="iframeResize()" src="/codemeta-generator" class="d-inline-block w-100" frameborder="0">
   If there is no form visible here, you can also access the [CodeMeta Generator](https://codemeta.github.io/codemeta-generator) directly. This may be due to browser security settings.
 </iframe>
 
