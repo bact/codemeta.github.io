@@ -56,5 +56,5 @@ window.addEventListener('resize', function() {
 </iframe>
 
   <a href="https://www.softwareheritage.org">
-  <img alt="Software Heritage logo" src="/img/swh-logo.png" style="height: 50px;"/> Software Heritage</a>
+  <img alt="" src="/img/swh-logo.png" style="height: 50px;"/> Software Heritage</a>
 {{< /rawhtml >}}

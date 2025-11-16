@@ -2,7 +2,7 @@
 			<div class="row justify-content-center">
 			{{ range sort .Site.Data.supporters "name" }}
 			<div class="card col-2 m-1 p-3 supporter-card">
-			  <a class="h-100" href="{{ .url }}" target="_blank" title="Link for {{ .name }} opens in new tab."><img class="card-img-top" aria-label="Logo for {{ .name }}" src="{{ .logo }}" alt="{{ .name }}"></a>
+			  <a class="h-100" href="{{ .url }}" target="_blank"><img class="card-img-top" src="{{ .logo }}" alt="{{ .name }}"></a>
 			</div>
 			{{ end }}</div>
 
