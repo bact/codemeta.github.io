@@ -62,6 +62,9 @@ publishDir = "../website"
     background = "img/pyramids.jpg"
     
     newslimit = 5
+    feeds = [
+        "https://softwareheritage.org/tag/codemeta/feed/"
+    ]
 
     date_format = "Mon, Jan 2, 2006"
     description = "A Rosetta Stone for Software Metadata"
