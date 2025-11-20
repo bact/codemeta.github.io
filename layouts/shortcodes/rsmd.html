@@ -1,0 +1,33 @@
+
+<div id="rsmd-carousel" class="carousel slide rounded-2 text-center pb-4" data-bs-ride="carousel" data-bs-touch="true">
+  <div class="carousel-inner">
+  {{ $counter := 0 }}
+    {{ range .Site.Data.rsmd }}
+    <div class="carousel-item rounded-2{{ if eq $counter 0 }} active{{ end }}" data-bs-interval="20000">
+      <dl class="m-3 px-md-5">
+        <dt>RSMD {{ .aspect }}</dt>
+        <dd class="px-5">{{ .description }} <a class="fw-bold" href="{{ .link }}" aria-label="See the full {{ .aspect }} description on the RSMD site">[...]</a>
+        <dd class="fst-italic fw-bold">{{ .class }}</dd>
+      </dl>
+    </div>
+    {{ $counter = add $counter 1 }}
+  {{ end }}
+  <button class="carousel-control-prev" type="button" data-bs-target="#rsmd-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#rsmd-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+  <div class="carousel-indicators my-0">
+  {{ $counter := 0 }}
+    {{ range .Site.Data.rsmd }}
+    <button id="carousel-slide-{{ $counter }}" type="button" data-bs-target="#rsmd-carousel" data-bs-slide-to="{{ $counter }}" class="carousel-indicator{{ if eq $counter 0 }} active{{ end }}" aria-current="true" aria-label="Slide {{ $counter }}">
+        <label class="form-check-label visually-hidden" for="carousel-slide-{{ $counter }}">Slide {{ $counter }}</label>
+    </button>
+    {{ $counter = add $counter 1 }}
+  {{ end }}
+  </div>
+</div>

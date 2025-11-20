@@ -1,5 +1,6 @@
 ---
 title: "The CodeMeta JSON-LD Representation"
+layout: sidenav
 ---
 
 CodeMeta uses JSON-LD to represent and translate between software metadata formats.

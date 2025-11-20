@@ -1,0 +1,57 @@
+[
+  {
+    "name": "National Science Foundation",
+    "logo": "/img/nsf.jpg",
+    "url": "https://www.nsf.gov/awardsearch/show-award?AWD_ID=1549758"
+  },
+  {
+    "name": "DataCite",
+    "logo": "/img/datacite.png",
+    "url": "https://datacite.org"
+  },
+  {
+    "name": "GitHub",
+    "logo": "/img/github.png",
+    "url": "https://github.com"
+  },
+  {
+    "name": "figshare",
+    "logo": "/img/figshare.png",
+    "url": "https://figshare.com"
+   },
+   {
+    "name": "Zenodo",
+    "logo": "/img/zenodo.jpg",
+    "url": "https://zenodo.org"
+  },
+  {
+    "name": "Software Heritage",
+    "logo": "/img/software-heritage.svg",
+    "url": "https://softwareheritage.org"
+  },
+  {
+    "name": "FAIR-IMPACT",
+    "logo": "/img/eoscfairimpact.jpg",
+    "url": "https://cordis.europa.eu/project/id/101057344"
+  },
+  {
+    "name": "FAIRCORE4EOSC",
+    "logo": "/img/FAIRCORE4EOSC.png",
+    "url": "http://cordis.europa.eu/project/id/101057264"
+  },
+  {
+    "name": "European Commission",
+    "logo": "/img/eu_commission.svg",
+    "url": "https://commission.europa.eu"
+  },
+  {
+    "name": "Alfred P. Sloan Foundation",
+    "logo": "/img/sloan.png",
+    "url": "https://sloan.org"
+  },
+  {
+    "name": "OSPO-RADAR",
+    "logo": "/img/ospo-radar.png",
+    "url": "https://www.softwareheritage.org/2025/04/02/ospo-radar-project-launch/"
+  }
+]

@@ -1,0 +1,45 @@
+<div id="newslinks" class="container pt-2">
+  <h3 class="ms-3">News</h3>
+  <ul class="list-group list-unstyled">
+    {{ if .IsHome }}
+
+{{ $items := slice }}
+
+{{ range $feed := .Site.Data.feeds }}
+{{ $item := index $feed.channel "item" }}
+{{ $items = $items | append $item }}
+{{ end }}
+
+{{ $combi := slice }}
+
+{{- range $items -}}
+{{ $t := time.AsTime .pubDate }}
+{{ $m := dict "link" .link "title" .title "pubDate" $t "description" .description }}
+{{ $combi = $combi | append $m }}
+{{- end -}}
+
+{{ $combi := sort $combi ".pubDate" "desc" }}
+
+  {{ range first .Site.Params.newslimit $combi }}
+
+    <li class="ps-2">
+      <a class="list-group-item newslink lh-base p-2" href="{{ .link }}">{{ .title }}</a>
+      <small class="p-2 text-secondary-emphasis">{{ .pubDate | time.Format "Jan 02, 2006 3:04 PM MST" }}</small>
+    </li>
+      {{ end }}
+    {{ else }}
+      {{ range $combi }}
+    <li class="ps-2">
+      <a class="list-group-item newslink lh-base p-2" href="{{ .link }}">{{ .title }}</a>
+      <small class="p-2 text-secondary-emphasis">{{ .pubDate | time.Format "Jan 02, 2006 3:04 PM MST" }}</small>
+    </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+    {{ if .IsHome }}<div class="text-center"><small class="mw-100 text-secondary-emphasis"><a href="/news">Full news feed</a></small></div>{{ end }}
+</div>
+<script src="../js/news.js"></script>
+<script>
+let urls = {{ .Site.Params.feeds | jsonify | safeJS }};
+refreshNewslinks(urls);
+</script>

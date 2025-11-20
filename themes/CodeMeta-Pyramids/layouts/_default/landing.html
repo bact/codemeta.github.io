@@ -1,0 +1,33 @@
+{{ define "body" }}
+<body class="profile-page sidebar-collapse"> <!-- other classes: index-page , landing-page -->
+
+  {{ partial "nav.html" . }}
+  {{ partial "page-header.html" . }}
+
+  
+  <div class="main main-raised">
+    <div class="section section-basic">
+      <div class="container">
+		<div class="row">
+		  <div class="landing-left col-md-8 container pe-5">
+		    {{ partial "landing_left" . }}
+		  </div>
+		  
+		  <div class="landing-right col-md-4 container h-75 mh-auto pb-4">
+		    {{ partial "landing_right" . }}
+		  </div>
+
+     <!-- {{ .Content }} -->
+      
+		  <div class="landing-wide container">
+		  {{ partial "landing_wide" . }}
+		  </div>
+		</div>
+      </div>
+    </div>
+  </div>
+  
+  {{ partial "footer" . }}
+ 
+</body>
+{{ end }}
