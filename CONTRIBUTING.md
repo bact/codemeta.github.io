@@ -1,0 +1,166 @@
+# Contributing to the CodeMeta site
+
+## Adding new Crosswalks
+
+Crosswalks are developed in
+[the main CodeMeta repository](https://github.com/codemeta/codemeta) and are
+periodically synchronised into the website.
+
+Any issues, requests, or contributions for Crosswalks should go there.
+
+Please refer to the
+[instructions for contributing](https://github.com/codemeta/codemeta/?tab=contributing-ov-file)
+to that repository.
+
+## Changes for the Codemeta Generator.
+
+The CodeMeta Generator is developed in
+[its own repository](https://github.com/codemeta/codemeta-generator). GitHub
+deploys it under the same subdomain as this site.
+
+Any issues, requests, or contributions for the Generator should go there.
+
+Please refer to the
+[instructions for contributing](https://github.com/codemeta/codemeta-generator/?tab=contributing-ov-file)
+to that repository.
+
+## Pull Requests
+
+The following is the preferred process for submitting PRs regarding the
+`https://codemeta.github.io` website:
+
+Fork the `https://github.com/codemeta/codemeta.github.io` repository. This
+creates your own copy of the repository. You have full control of this copy.
+
+[![CodeMeta website forks](https://img.shields.io/github/forks/codemeta/codemeta.github.io)](https://github.com/codemeta/codemeta.github.io/fork)
+
+Clone _*your copy*_ of the repository. Where `<user>` is your github username:
+
+```
+git clone git@github.com:<user>/codemeta.github.io.git
+```
+
+There should be an issue open that discusses this change. Open an new issue if
+one does not already exist:
+
+[![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/codemeta/codemeta.github.io)](https://github.com/codemeta/codemeta.github.io/issues)
+
+(Optional) Create a new branch for your change. This keeps your `master` branch
+clear of changes, which can make it difficult to keep it in sync with the
+original repository. The following would create a branch named for issue #999:
+
+```
+git checkout -b "issue-999"
+```
+
+Make your changes as discussed and commit them to your local copy. Include the
+issue number somewhere in a commit message, prefixed with a `#`, eg, `#999`.
+This will prompt GitHub to create a link back to the issue.
+
+Try to stick to one functional change per commit. This makes it easy to revert
+if something goes wrong.
+
+Push the commits up to GitHub:
+
+```
+git push origin issue-999
+```
+
+GitHub will prompt you to open a Pull Request. Open the Pull Request against
+the `master` branch.
+
+If the maintainers agree with your change, it will be merged. Otherwise it
+will be discussed and possibly edited in the Pull Request process.
+
+### Updating Scripts
+
+Scripts in the `/scripts/` directory of this repository process data synced
+from the main CodeMeta repository.
+
+Please check with [the main repository](https://github.com/codemeta/codemeta/)
+before updating these.
+
+### Updating Data Files
+
+Some data files in the `/data/` directory must not be manually edited in this
+repository; The `crosswalk` and `property_description` data files are
+generated during deployment and protected by `/data/.gitignore`.
+
+The files in `/data/feeds/` are checked for updates once a day. If they are
+not updating, then fixes should be applied to `.github/workflow/news.yml`.
+
+Other data files in `/data/` are discussed below.
+
+### Updating the front page features
+
+The front page layout, `landing` is divided into three sections containing
+top-level partials:
+  - `landing_left` contains the index page content,
+  - `landing_right` is narrower and contains content that is likely to change,
+  - `landing_wide` is a full-width section above the footer.
+
+A *Partial* is a fragment of the theme that can be reused. Using partials for
+complex pieces of the layout allows functionality to be moved, removed, or
+duplicated easily. A *Shortcode* is the equivalent for within `/content/`
+(instead of `/theme/`) and allow content and site functionality to be kept
+separate.
+
+Subsections that require generation from the Hugo template engine should be
+contained in partials or shortcodes. Other static theming, such as buttons,
+can be kept as inline HTML within these top-level partials.
+
+#### News Feeds
+
+The website's news feed is updated by a combination of GitHub Actions and
+Javascript. The workflow fetches the RSS feeds each day, and commits a new
+version if there are any updates. Javascript fetches any updates between
+these snapshots. This avoids an ugly jump when loading the remote feeds.
+
+To add a new feed:
+
+- Add a `curl` command to `.github/workflows/news.yml` to fetch the feed's
+URL. Use an existing command as an example.
+- Add the URL as a value to the `feeds` array under `[params]` in the site's
+`config.toml`.
+- (Optional) Add a copy of the RSS feed to `/data/feeds/`
+
+All feeds in `/data/feed/` will be merged and items are sorted by their
+`pubDate` before display.
+
+#### Supporter Acknowledgements
+
+The supporter acknowledgement cards on the landing page are built from
+`/data/supporters.json`. These cards give recognition to organisations and
+other projects that have helped to further CodeMeta's mission.
+
+To add a new supporter:
+
+- Add an object to the array in `/data/supporters.json` that contains the
+key-value pairs `name`, `logo`, and `url`.
+  - `name` should be the full name of the entity.
+  - `logo` can either be a full URL, or a path (_recommended_). As images are
+consolidated to the `/img/` directory. The path is `/img/<filename>`, where
+`<filename>` is only the filename. Do *not* use the source path.
+  - `url` should be a website, an announcement link, or funding record link.
+- If a path is provided as the value of `logo`, a file with the corresponding
+filename must be added to the `/static/img/` directory.
+
+The cards are generated sorted by name.
+
+#### RSMD Carousel
+
+If the [Research Software Metadata Guidelines](https://fair-impact.github.io/RSMD-guidelines/)
+working group releases new Aspects promoting CodeMeta, they should be added to
+carousel on the front page. The carousel is built from `/data/rsmd.json`.
+
+To add a new Aspect:
+
+- Add an object to the array in `/data/rsmd.json` that contains the key-value
+pairs `aspect`, `description`, `class`, and `link`.
+  - `aspect` is the number of the new guideline.
+  - `description` is a substring of the full guideline text.
+  - `class` is the importance classification, ie `Useful`.
+  - `link` is a direct link to the page onthe RSMD site.
+
+Keeping the JSON file ordered by the `aspect` number will make it easier to
+identify which Aspects are represented already.
