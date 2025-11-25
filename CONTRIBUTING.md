@@ -40,20 +40,26 @@ Clone _*your copy*_ of the repository. Where `<user>` is your github username:
 git clone git@github.com:<user>/codemeta.github.io.git
 ```
 
-There should be an issue open that discusses this change. Open an new issue if
+There should be an issue open that discusses this change. Open a new issue if
 one does not already exist:
 
 [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/codemeta/codemeta.github.io)](https://github.com/codemeta/codemeta.github.io/issues)
 
-(Optional) Create a new branch for your change. This keeps your `master` branch
-clear of changes, which can make it difficult to keep it in sync with the
-original repository. The following would create a branch named for issue #999:
+(Optional) Create a new branch for your change. This keeps your `master`
+branch clear of changes, which can make it difficult to keep it in sync with
+the original repository. The following would create a branch named for issue
+#999:
 
 ```
 git checkout -b "issue-999"
 ```
 
-Make your changes as discussed and commit them to your local copy. Include the
+Make your changes as discussed, then run Hugo to make sure the changes are
+correct and nothing has broken.
+[Refer to the staging instructions](https://github.com/codemeta/codemeta.github.io?tab=readme-ov-file#staging-the-site)
+for how to preview your changes locally.
+
+Add and commit your changed files to your local repository copy. Include the
 issue number somewhere in a commit message, prefixed with a `#`, eg, `#999`.
 This will prompt GitHub to create a link back to the issue.
 
@@ -69,8 +75,8 @@ git push origin issue-999
 GitHub will prompt you to open a Pull Request. Open the Pull Request against
 the `master` branch.
 
-If the maintainers agree with your change, it will be merged. Otherwise it
-will be discussed and possibly edited in the Pull Request process.
+If the maintainers agree with your change, it will be merged. If they do not,
+it will be discussed and possibly edited in the Pull Request process.
 
 ### Updating Scripts
 
@@ -150,8 +156,8 @@ The cards are generated sorted by name.
 #### RSMD Carousel
 
 If the [Research Software Metadata Guidelines](https://fair-impact.github.io/RSMD-guidelines/)
-working group releases new Aspects promoting CodeMeta, they should be added to
-carousel on the front page. The carousel is built from `/data/rsmd.json`.
+working group releases new Aspects promoting CodeMeta, they should be added
+to carousel on the front page. The carousel is built from `/data/rsmd.json`.
 
 To add a new Aspect:
 
