@@ -6,7 +6,31 @@ Crosswalks are developed in
 [the main CodeMeta repository](https://github.com/codemeta/codemeta) and are
 periodically synchronised into the website.
 
-Any issues, requests, or contributions for Crosswalks should go there.
+A markdown file must be created on this website before that synchronised
+Crosswalk data is displayed. Refer to existing files for examples of the
+format. The file must contain the following frontmatter fields:
+
+- `title` in the format `Crosswalk for <target>` where `<target>` is the name
+of the system the Crosswalk maps to. It can include spaces and symbols.
+- `image` in the format `/img/<filename>` where `<filename>` is the name of
+the logo filename, including extension. This file must be added to the
+`/static/img/` directory. Do *not* use the source path.
+
+The content after the frontmatter should include a short description of the
+target system. A link to the system or its metadata documentation should be
+included in this description.
+
+The following code required on the last line of the file, where
+`<source filename>` is the filename of
+[the Crosswalk source file in the main repository](https://github.com/codemeta/codemeta.github.io/tree/master/content/crosswalk),
+including spaces and symbols, but _without_ the extension:
+
+```
+{{% crosswalk name="<source filename>" %}}
+```
+
+Any other issues, requests, or contributions for the content of Crosswalks
+should go to the main repository.
 
 Please refer to the
 [instructions for contributing](https://github.com/codemeta/codemeta/?tab=contributing-ov-file)
