@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.8.3</generator>
+	<generator>https://wordpress.org/?v=6.9</generator>
 
 <image>
 	<url>https://www.softwareheritage.org/wp-content/uploads/2015/08/cropped-swh-logo-32x32.png</url>
@@ -87,7 +87,8 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><a href="https://codemeta.github.io/codemeta-generator/"><img fetchpriority="high" decoding="async" width="1024" height="577" src="https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-1024x577.jpg" alt="" class="wp-image-41700" srcset="https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-1024x577.jpg 1024w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-300x169.jpg 300w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-768x433.jpg 768w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-1536x866.jpg 1536w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-2048x1154.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></div>
+<figure class="aligncenter size-large"><a href="https://codemeta.github.io/codemeta-generator/"><img fetchpriority="high" decoding="async" width="1024" height="577" src="https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-1024x577.jpg" alt="" class="wp-image-41700" srcset="https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-1024x577.jpg 1024w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-300x169.jpg 300w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-768x433.jpg 768w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-1536x866.jpg 1536w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-2048x1154.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
+</div>
 
 
 <p></p>
@@ -122,7 +123,8 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><a href="https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1.png"><img decoding="async" width="1024" height="578" src="https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1.png" alt="" class="wp-image-46165" srcset="https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1.png 1024w, https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1-300x169.png 300w, https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1-768x434.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption"><em>Metadata from the DESCRIPTION file automatically populates this codemeta.json file</em>.</figcaption></figure></div>
+<figure class="aligncenter size-full"><a href="https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1.png"><img decoding="async" width="1024" height="578" src="https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1.png" alt="" class="wp-image-46165" srcset="https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1.png 1024w, https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1-300x169.png 300w, https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1-768x434.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption"><em>Metadata from the DESCRIPTION file automatically populates this codemeta.json file</em>.</figcaption></figure>
+</div>
 
 
 <p>The real magic of codemetar lies in its ability to automatically pull relevant information from your R package&#8217;s DESCRIPTION file and seamlessly convert it into the Codemeta JSON format. A simple function call like write_codemeta() is all it takes to extract all that useful metadata from your DESCRIPTION file and pop it into a new codemeta.json file. What’s more, codemetar can even dig into your README file to extract extra metadata, like badges showing continuous integration services or minimum R version requirements. And here’s a neat little trick: codemetar automatically adds the generated codemeta.json file to your .Rbuildignore file, ensuring it never messes with your R package build process.</p>
