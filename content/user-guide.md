@@ -16,7 +16,7 @@ Here is an example of a basic `codemeta.json` that you can put at the root of a 
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.0",
+    "@context": "https://w3id.org/codemeta/3.1",
     "type": "SoftwareSourceCode",
     "applicationCategory": "Biology",
     "codeRepository": "https://github.com/gem-pasteur/macsyfinder",
@@ -98,7 +98,7 @@ This should be added at the top level of the document, indicating that this indi
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.0",
+    "@context": "https://w3id.org/codemeta/3.1",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -117,7 +117,7 @@ JSON-LD operations can later *expand* this reference and *embed* the full inform
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.0",
+    "@context": "https://w3id.org/codemeta/3.1",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -144,7 +144,7 @@ We saw before a simple (root) SoftwareSourceCode object:
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.0",
+    "@context": "https://w3id.org/codemeta/3.1",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR"
 }
@@ -154,7 +154,7 @@ and this root object can refer to other objects, for example recommend a Softwar
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.0",
+    "@context": "https://w3id.org/codemeta/3.1",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -169,7 +169,7 @@ And you may in turn want to add attributes to this application:
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.0",
+    "@context": "https://w3id.org/codemeta/3.1",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -191,7 +191,7 @@ For example, the above code is not equivalent to:
 
 ```json
 {
-    "@context": "https://w3id.org/codemeta/3.0",
+    "@context": "https://w3id.org/codemeta/3.1",
     "@type": "SoftwareSourceCode",
     "name": "CodemetaR",
 
@@ -219,7 +219,7 @@ The CodeMeta GitHub repository defines tags to allow specific versions of a file
 appropriate context file, e.g.
 
 ```json
-"@context": "https://w3id.org/codemeta/3.0"
+"@context": "https://w3id.org/codemeta/3.1"
 ```
 
 Release candidate versions may be referred to consistently using their [git tag](https://github.com/codemeta/codemeta/tags) for the raw version, e.g. <https://raw.githubusercontent.com/codemeta/codemeta/2.0-rc/codemeta.jsonld>.  *Please do not refer to the raw GitHub URL for the master branch*, as this is subject to change and will not guarantee a stable metadata file.
