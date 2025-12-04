@@ -40,7 +40,12 @@ textarea will allow you to:
 
 {{< rawhtml >}}
   <a class="fw-bold btn btn-lg btn-primary my-5" href="/codemeta-generator" target="_blank">Open the CodeMeta Generator</a><br>
-
+  <p class="mt-3">
+    A version of the codemeta generator that will help you generate your codemeta.json file automatically.
+  </p>
+  <a class="fw-bold btn btn-lg btn-primary mb-5" href="https://autocodemeta.linkeddata.es/" target="_blank">
+    (beta) Auto-codemeta generator
+  </a><br>
   <a href="https://www.softwareheritage.org">
   <img alt="" src="/img/swh-logo.png" style="height: 50px;"/> Software Heritage</a>
 {{< /rawhtml >}}
