@@ -12,7 +12,7 @@
 	<atom:link href="https://www.softwareheritage.org/tag/codemeta/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.softwareheritage.org/tag/codemeta/</link>
 	<description></description>
-	<lastBuildDate>Tue, 04 Nov 2025 15:10:25 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 04 Dec 2025 09:52:59 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,137 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>CodeMeta Party: Shaping the future of software metadata</title>
+		<link>https://www.softwareheritage.org/2025/12/04/codemeta-future-software-metadata/</link>
+		
+		<dc:creator><![CDATA[Nicole Martinelli]]></dc:creator>
+		<pubDate>Thu, 04 Dec 2025 09:52:57 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Codemeta]]></category>
+		<category><![CDATA[metadata]]></category>
+		<category><![CDATA[OpenScience]]></category>
+		<guid isPermaLink="false">https://www.softwareheritage.org/?p=47513</guid>
+
+					<description><![CDATA[<p>Join the movement shaping CodeMeta v4.0. We're defining the standards for software metadata to improve discovery, trust, and interoperability across the global research ecosystem.</p>
+<p>The post <a href="https://www.softwareheritage.org/2025/12/04/codemeta-future-software-metadata/">CodeMeta Party: Shaping the future of software metadata</a> appeared first on <a href="https://www.softwareheritage.org">Software Heritage</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>CodeMeta community members from across Europe gathered at Inria headquarters in Paris for a day-long unconference dedicated to one question:</p>
+
+
+
+<p>How should the <a href="https://codemeta.github.io/">CodeMeta</a> standard evolve to meet the needs of Open Source Program Offices (OSPOs)?</p>
+
+
+
+<p>Funded by the <a href="https://sloan.org/">Alfred P. Sloan Foundation</a>, the event was part of the <a href="https://www.softwareheritage.org/2025/04/02/ospo-radar/">OSPO-RADAR</a> project, which is developing tools for academic OSPOs. Because the future OSPO-RADAR dashboard will rely entirely on CodeMeta, the timing could not have been better. This workshop allowed implementers, infrastructure providers, registry maintainers, librarians, researchers, funders, and OSPO staff to align expectations and define what CodeMeta needs next.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>CodeMeta: Defining research software metadata for a decade</strong></h2>
+
+
+
+<p>Created in 2015 from the <a href="https://github.com/force11/force11-sciwg">FORCE11 Software Citation Working Group</a>, CodeMeta provides a shared, machine-readable vocabulary for describing research software. Today, it is used or supported by a growing number of infrastructures and organisations, including Software Heritage, <a href="https://zbmath.org/software/">swMath</a>, <a href="https://zenodo.org/">Zenodo</a>/<a href="https://inveniordm.web.cern.ch/">InvenioRDM</a>, <a href="https://www.softwareheritage.org/2023/04/04/swhid-deposit-hal/">HAL</a>, <a href="http://ascl.net">ascl.net</a>, and many scientific registries via the <a href="https://scicodes.net">SciCodes consortium</a>.<br><a href="https://codemeta.github.io/">CodeMeta v3.1</a>, released this autumn, further improves alignment with systems such as Wikidata, <a href="https://spdx.dev/">SPDX</a>, <a href="http://www.vivoweb.org/">VIVO</a>, the Metadata Object Description Schema (<a href="https://en.wikipedia.org/wiki/Metadata_Object_Description_Schema">MODS</a>), Data Catalog Vocabulary (<a href="https://www.w3.org/TR/vocab-dcat/">DCAT</a>), <a href="https://yml.publiccode.tools/">publiccode.yml</a>, and several disciplinary repositories.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Diverse expertise, focused discussion</strong></h2>
+
+
+
+<p>The CodeMeta Party brought together more than 20 participants from OSPOs, research infrastructures, scientific registries, publishers, library services, and software engineering teams. The format was intentionally simple: no pre-set agenda, no long presentations—just a whiteboard, a stack of post-its, and a room full of people who work with software metadata every day.</p>
+
+
+<div class="wp-block-image">
+<figure class="alignleft size-full is-resized"><a href="https://www.softwareheritage.org/wp-content/uploads/2025/12/30c71a90-e46f-4a70-aeb6-0d31bd11c3fc-1-e1764764234919.jpg"><img fetchpriority="high" decoding="async" width="742" height="626" src="https://www.softwareheritage.org/wp-content/uploads/2025/12/30c71a90-e46f-4a70-aeb6-0d31bd11c3fc-1-e1764764234919.jpg" alt="" class="wp-image-47531" style="width:247px;height:auto" srcset="https://www.softwareheritage.org/wp-content/uploads/2025/12/30c71a90-e46f-4a70-aeb6-0d31bd11c3fc-1-e1764764234919.jpg 742w, https://www.softwareheritage.org/wp-content/uploads/2025/12/30c71a90-e46f-4a70-aeb6-0d31bd11c3fc-1-e1764764234919-300x253.jpg 300w" sizes="(max-width: 742px) 100vw, 742px" /></a><figcaption class="wp-element-caption"><em>Photo by <a href="https://www.flickr.com/photos/31624976@N00" target="_blank" rel="noopener noreferrer">sarah0s</a>, licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-ND 2.0</a></em></figcaption></figure>
+</div>
+
+
+<p>Participants self-organized into discussions that ranged from refining property definitions to exploring how CodeMeta could better support institutional reporting, reuse metrics, SBOM workflows, and long-term preservation. Others focused on improving the CodeMeta generator, website documentation, and crosswalk mappings.</p>
+
+
+
+<p>Throughout the day, the conversations were energetic and pragmatic. People described real situations they face in their infrastructures—missing metadata, inconsistent definitions, unclear documentation—and collaboratively worked out what needs to change.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Key takeaways</strong></h2>
+
+
+
+<p>Several areas emerged as priorities for the next phase of the standard:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Clarifying the </strong>referencePublication <strong>and potential new </strong>relatedPublication <strong>properties,</strong> and ensuring they can be automated through aggregators.</li>
+
+
+
+<li><strong>Improving support for OSPOs</strong>, particularly around software impact, institutional attribution, and evaluation, while recognizing that metrics themselves should not be embedded directly in CodeMeta.</li>
+
+
+
+<li><strong>Enhancing the CodeMeta generator and vocabulary</strong>, including documentation, examples, and content negotiation.</li>
+
+
+
+<li><strong>Strengthening interoperability</strong>, building on the v3.1 release, and preparing for the transition to SSSOM-based crosswalks.</li>
+
+
+
+<li><strong>Making CodeMeta easier to adopt</strong> through clearer guidance, a redesigned website, and improved onboarding materials.<br></li>
+</ul>
+
+
+
+<p>These insights will feed directly into the ongoing planning for <strong>CodeMeta v4.0</strong>.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>What’s next</strong></h2>
+
+
+
+<p>Here are a few key outcomes from the party:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Drafting updates for CodeMeta v4.0<br></li>
+
+
+
+<li>Reviewing the mapping methodology ahead of the <a href="https://mapping-commons.github.io/sssom/">SSSOM migration</a><br></li>
+
+
+
+<li>Refining documentation and examples<br></li>
+
+
+
+<li>Planning follow-up workshops for 2026, including an online mapping workshop scheduled for May.<br></li>
+</ul>
+
+
+
+<p>You can check out the full discussion on GitHub: <strong><a href="https://github.com/codemeta/codemeta/discussions/445">https://github.com/codemeta/codemeta/discussions/445</a></strong><br>Your contributions are welcome as we continue to shape CodeMeta.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Get involved</strong></h2>
+
+
+
+<p>CodeMeta’s evolution is entirely community-driven. If your institution is interested in metadata workflows, OSPO tooling, software preservation, or research software standards, please join the discussions.<a href="https://github.com/codemeta/codemeta/discussions/445"><br></a>And if your organization would like to host the next <strong>CodeMeta Party in 2026</strong>, please reach out via the SciCodes mailing list: scicodes@googlegroups.com</p>
+<p>The post <a href="https://www.softwareheritage.org/2025/12/04/codemeta-future-software-metadata/">CodeMeta Party: Shaping the future of software metadata</a> appeared first on <a href="https://www.softwareheritage.org">Software Heritage</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>CodemetaR Author streamlines software metadata updates</title>
 		<link>https://www.softwareheritage.org/2025/06/18/codemetar-author-streamlines-software-metadata-updates/</link>
 		
@@ -87,7 +218,7 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><a href="https://codemeta.github.io/codemeta-generator/"><img fetchpriority="high" decoding="async" width="1024" height="577" src="https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-1024x577.jpg" alt="" class="wp-image-41700" srcset="https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-1024x577.jpg 1024w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-300x169.jpg 300w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-768x433.jpg 768w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-1536x866.jpg 1536w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-2048x1154.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
+<figure class="aligncenter size-large"><a href="https://codemeta.github.io/codemeta-generator/"><img decoding="async" width="1024" height="577" src="https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-1024x577.jpg" alt="" class="wp-image-41700" srcset="https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-1024x577.jpg 1024w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-300x169.jpg 300w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-768x433.jpg 768w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-1536x866.jpg 1536w, https://www.softwareheritage.org/wp-content/uploads/2024/08/codemeta-generator-2048x1154.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
 </div>
 
 
@@ -123,7 +254,7 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full"><a href="https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1.png"><img decoding="async" width="1024" height="578" src="https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1.png" alt="" class="wp-image-46165" srcset="https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1.png 1024w, https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1-300x169.png 300w, https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1-768x434.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption"><em>Metadata from the DESCRIPTION file automatically populates this codemeta.json file</em>.</figcaption></figure>
+<figure class="aligncenter size-full"><a href="https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1.png"><img loading="lazy" decoding="async" width="1024" height="578" src="https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1.png" alt="" class="wp-image-46165" srcset="https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1.png 1024w, https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1-300x169.png 300w, https://www.softwareheritage.org/wp-content/uploads/2025/06/codemeta_tutorial-1-768x434.png 768w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption"><em>Metadata from the DESCRIPTION file automatically populates this codemeta.json file</em>.</figcaption></figure>
 </div>
 
 
